@@ -1,2 +1,3 @@
 # Google
-This is a practice html project .
+This is a practice html+css project.
+
