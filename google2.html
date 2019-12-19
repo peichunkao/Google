@@ -20,12 +20,6 @@
 	<div class="cointainer">
 		<div class="logo"></div>
 		<div class="search">
-			<div class="magnifier">
-        <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">	
-          </path>
-        </svg>  
-      </div>
       <input class="keyword" type="text">
       <div class="microphone"></div>
      </div>
@@ -43,11 +37,19 @@
         	aria-label="I'm Feeling Lucky" 
         	name="btnI" type="submit" 
         	jsaction="sf.lck" 
-        	data-ved="0ahUKEwiCj6nut77mAhX47HMBHVbmCoMQ19QECA0">
+					data-ved="0ahUKEwiCj6nut77mAhX47HMBHVbmCoMQ19QECA0">
      </div>
      <div class="qrcode"></div>
      <p class="p1">下载百度APP</p>
-		 <p class="p2">有事搜一搜  没事看一看</p>
+		 <p class="p2">有事搜一搜  没事看一看</p></br>
+		</br><button id="myBtn">Click Me To Show Date.</button></br>
+		 <p id="demo"></p>
 	</div>
+<script>
+	document.getElementById("myBtn").addEventListener("click", displayDate);
+	function displayDate() {
+		document.getElementById("demo").innerHTML = Date();
+	}
+</script>
 </body>
 </html>
