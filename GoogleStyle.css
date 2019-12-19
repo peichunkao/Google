@@ -1,0 +1,173 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.header {
+	display: flex;
+	height: 60px;
+	align-items: center;
+	justify-content: space-between;
+}
+.headerLeft {
+	display: inline-block;
+	padding-left: 15px;
+}
+.header a {
+	color: grey;
+	text-decoration: none;
+	font-size: 16px;
+	font-family: arial;
+	padding-left: 20px;
+}
+.header a:hover {
+	text-decoration: underline;
+}
+.headerRight {
+	display: inline-block;
+	padding-right: 20px;
+}
+.cointainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+  height:100%;
+  margin: auto;
+  justify-content: space-between;
+}
+.logo {
+  background-image: url(googlelogo.png);
+  background-repeat: no-repeat;
+  width: 272px;
+  height: 92px;
+  margin-top: 109px;
+}
+.search {
+	margin-top: 80px;
+	position: absolute;
+	display: flex;
+	top: 200px;
+  background: #FFF;
+  border:1px solid #dfe1e5;
+  border-radius:24px;
+  z-index: 3;
+  height:44px;
+  width:482px;
+  align-items: center;
+}
+.magnifier {
+  position: relative;
+  top:2.5px;
+  left:10px;
+  display: inline;
+}
+.magnifier svg{
+  height:30px;
+  color:#9AA0A6;
+  fill:currentColor;
+}
+.keyword {
+	position: relative;
+  width:400px;
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+}
+.microphone {
+  position:relative;
+  top:5px;
+  background-image: url("microphone.png");
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size:30px;
+}
+.searchBn {
+	position: relative;
+	top: 80px;
+  margin:11px 4px;
+  padding:0 16px;
+  line-height:27px;
+  height:36px;
+  cursor:pointer;
+}
+.button {
+  background-color:#F5f5f5;
+  border:1px solid #f2f2f2;
+  border-radius:4px;
+  color:#5F6368;
+  font-family:Arial;
+  font-size:14px;
+  padding:0 16px;
+  line-height:27px;
+  margin:0px 16px;
+  height:36px;
+  cursor:pointer;
+}
+.qrcode {
+  background: url(http://s1.bdstatic.com/r/www/cache/static/home/img/qrcode/zbios_09b6296.png) 0 0 no-repeat;
+  display: flex;
+  height: 106px;
+  width: 106px;
+  justify-content: center;
+  margin-top:200px;
+}
+.p1 {
+  color: #333;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+}
+.p2 {
+  color: #999;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 300;
+}
