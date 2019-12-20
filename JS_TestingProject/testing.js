@@ -69,10 +69,44 @@ while (i <= 41) {
   }
   i++;
 }
-*/
+
 var answer = prompt("Are we there yet?");
 while (answer.indexOf("yes") === -1) {
   answer = prompt("Are we there yet?");
 } 
   alert("YAY, WE MADE IT!.");
-;
+;*/
+
+function isEven(input) {
+  return input % 2 === 0;
+}
+
+function factorial(input) {
+  var result = 1;
+  for(var i = 1; i <= input; i++) {
+    result = result * i;
+  }
+  return result;
+}
+
+function kebebToSnake(input) {
+  var newString = input.replace(/-/g, "_");
+  return newString;
+}
+
+function sayHi() {
+  console.log("hi there");
+}
+
+var tax_range = [
+  {base: 1, name:1},
+  {base: 2, name:2},
+];
+
+
+function myfunction(input) {
+  console.log(input.base);
+  console.log(input.name);
+};
+
+//tax_range.forEach(myfunction);
