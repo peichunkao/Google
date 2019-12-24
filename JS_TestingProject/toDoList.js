@@ -4,9 +4,7 @@ var input = prompt("Please input a command for todo list.");
 
 while (input !== "quit") {
   if (input === "list") {
-    todo.forEach(function(item, i) {
-      console.log(i + ":" + " " + item);
-    });
+    toDoList()
   } else if (input === "new") {
       var newTodo = prompt("Please input new todo.");
       todo.push(newTodo);
@@ -18,5 +16,12 @@ while (input !== "quit") {
 
   input = prompt("Please input a command for todo list.");
 }
-
 console.log("You quit the app.");
+
+function toDoList() {
+  console.log("****************");
+  todo.forEach(function(item, i) {
+    console.log(i + ":" + " " + item);
+  });
+  console.log("****************");
+};
