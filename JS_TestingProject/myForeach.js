@@ -22,3 +22,19 @@ myForEach(test, myfunction1)
 (function() {
   console.log("123");
 })
+
+//writing anonymous function in function
+myForEach(test,function(){console.log("hi")});
+myForEach(test,function(element){console.log(element)});
+
+//add myForEach function in array object
+Array.prototype.myForEach = function(myfunction) {
+  for(var i = 0; i < this.length; i++) {
+    myfunction(this[i]);
+  }
+};
+
+//invoke myForEach with anonymous function
+test.myForEach(function(element){
+  console.log("I love " + element);
+})
