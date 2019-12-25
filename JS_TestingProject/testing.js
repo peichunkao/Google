@@ -47,6 +47,18 @@ const threeStopsFlights = [{
   arrival: 'Beijing'
 }];
 
+function getStops1(flights) {
+  const stopMap = {
+    1:'non-stop',
+    2:'1 stop',
+    4:'day dream airline'
+  }
+
+  var result = stopMap[flights.length] || (flights.length - 1) + " stops";
+  console.log(result);
+};
+
+
 function getStops(flights) {
   const stopsMap = {
     1: 'non-stop',
