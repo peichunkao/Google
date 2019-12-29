@@ -1,0 +1,7 @@
+$(".highlight").css("width","200px")
+$("#third").css("border","10px solid orange")
+$("a").css("font-size","20px")
+$("div").css("background","purple")
+$("div:first-of-type").css("color","pink")
+$("img").attr("src","https://i.ytimg.com/vi/zx0gXM_FkgE/maxresdefault.jpg")
+$("select").val()
