@@ -4,6 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style >
+    .effect{
+      width: 300px;
+      height: 30px;
+      background-color: green;
+      float: left;
+      margin: 20px;
+    }
+  </style>
   <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -12,6 +21,13 @@
 </head>
 <body>
   <h1>jQuery Demo</h1>
+  <button id="click">FadeOut</button>
+  <div>
+    <div class="effect">Don't fade me plz.</div>
+    <div class="effect">Please don't fade me.</div>
+    <div class="effect">I am telling you don't fade me.</div>
+  </div>
+  
   <input type="text" placeholder="StevenKao">
   <select name="menu" id="">
     <option value="Dog">Dog</option>
@@ -22,7 +38,11 @@
     <option value="Dog">Dog</option>
     <option value="Cat">Cat</option>
     <option value="Wombat">Wombat</option>
-  </select>
+  </select></br>
+  <br>
+  <button>click me</button>
+  <button>don't click me</button>
+  <button>this is a button</button>
   <ul>
     <li>wasing</li>
     <li id="buying">buying <a href="http://buying.com">buying.com</a></li>
